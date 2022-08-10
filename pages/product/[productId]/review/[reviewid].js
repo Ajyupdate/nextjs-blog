@@ -1,11 +1,12 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"
 
-function Review(){
+function Review() {
     const router = useRouter()
     const {productId, reviewId} = router.query
-
-    return(
-        <h1>Review {reviewId} for product {productId}</h1>
-    )
+  return (
+    
+    <div>Review {reviewId} for product {productId}</div>
+  )
 }
+
 export default Review
